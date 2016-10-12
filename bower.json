@@ -1,0 +1,22 @@
+{
+  "name": "custom-ckeditor-kcfinder-included",
+  "authors": [
+    "beyaty.david <beyaty.david@brightly.hu>"
+  ],
+  "description": "CKEditor 4.5.6 with some plugins and kcfinder included for image uploads",
+  "main": "ckeditor.js",
+  "keywords": [
+    "ckeditor",
+    "kcfinder"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
