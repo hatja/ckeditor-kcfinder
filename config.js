@@ -35,7 +35,15 @@ CKEDITOR.editorConfig = function( config ) {
 	config.format_tags = 'p;h1;h2;h3;pre';
 
 	config.height = 300;
-	//config.allowedContent = '*';
+	config.allowedContent = {
+    $1: {
+	        // Use the ability to specify elements as an object.
+	        elements: CKEDITOR.dtd,
+	        attributes: true,
+	        styles: true,
+	        classes: true
+	    }
+	};
 
 	config.fullPage = true;
 	config.disallowedContent = 'script; *[on*]';
