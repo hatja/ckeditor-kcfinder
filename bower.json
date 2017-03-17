@@ -7,7 +7,8 @@
   "main": "ckeditor.js",
   "keywords": [
     "ckeditor",
-    "kcfinder"
+    "kcfinder",
+    "template"
   ],
   "license": "MIT",
   "homepage": "",

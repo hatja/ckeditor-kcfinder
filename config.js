@@ -1,12 +1,5 @@
-/**
- * @license Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md or http://ckeditor.com/license
- */
 
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here.
-	// For complete reference see:
-	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
@@ -35,6 +28,7 @@ CKEDITOR.editorConfig = function( config ) {
 	config.format_tags = 'p;h1;h2;h3;pre';
 
 	config.height = 300;
+	//allow inline style, data attributes, classes and other html elements like <div><p> etc..
 	config.allowedContent = {
     $1: {
 	        // Use the ability to specify elements as an object.
@@ -45,7 +39,8 @@ CKEDITOR.editorConfig = function( config ) {
 	    }
 	};
 
-	config.fullPage = true;
+	//adds html structure(<html><body> etc..)
+	//config.fullPage = true;
 	config.disallowedContent = 'script; *[on*]';
 
 	// Simplify the dialog windows.
